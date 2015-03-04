@@ -1,5 +1,6 @@
 package sr.edu.ifes.bd2.competicoes.model;
 
+import lombok.Builder;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import org.springframework.data.jpa.domain.AbstractPersistable;
@@ -13,6 +14,7 @@ import static javax.persistence.CascadeType.ALL;
 
 @Entity
 @Data
+@Builder
 @EqualsAndHashCode(callSuper = false)
 public class Competidor extends AbstractPersistable<Long> {
 
@@ -21,6 +23,8 @@ public class Competidor extends AbstractPersistable<Long> {
 
     @OneToMany(mappedBy = "competidor", cascade = ALL)
     private List<Participacao> participacoes;
-    @OneToMany(mappedBy = "competidor", cascade = ALL)
-    private List<Evento> eventos;
+    @OneToMany(mappedBy = "competidor1", cascade = ALL)
+    private List<Evento> eventosCompetidor1;
+    @OneToMany(mappedBy = "competidor2", cascade = ALL)
+    private List<Evento> eventosCompetidor2;
 }
