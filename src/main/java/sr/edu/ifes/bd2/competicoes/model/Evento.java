@@ -8,18 +8,20 @@ import org.springframework.data.jpa.domain.AbstractPersistable;
 import javax.persistence.Entity;
 import javax.persistence.ManyToOne;
 
+import static javax.persistence.CascadeType.*;
+
 @Entity
 @Data
 @Builder
 @EqualsAndHashCode(callSuper = false)
 public class Evento extends AbstractPersistable<Long> {
 
-    @ManyToOne
+    @ManyToOne(cascade = {MERGE, DETACH, PERSIST, REFRESH})
     private Competidor competidor1;
-    @ManyToOne
+    @ManyToOne(cascade = {MERGE, DETACH, PERSIST, REFRESH})
     private Competidor competidor2;
-    @ManyToOne
+    @ManyToOne(cascade = {MERGE, DETACH, PERSIST, REFRESH})
     private Competicao competicao;
-    @ManyToOne
+    @ManyToOne(cascade = {MERGE, DETACH, PERSIST, REFRESH})
     private Competidor vencedor;
 }

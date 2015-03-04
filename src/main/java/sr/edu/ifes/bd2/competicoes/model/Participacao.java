@@ -9,6 +9,8 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.ManyToOne;
 
+import static javax.persistence.CascadeType.ALL;
+
 @Entity
 @Data
 @Builder
@@ -19,8 +21,8 @@ public class Participacao extends AbstractPersistable<Long> {
     private Long colocacao;
     @Column
     private Long premio;
-    @ManyToOne
+    @ManyToOne(cascade = ALL)
     private Competidor competidor;
-    @ManyToOne
+    @ManyToOne(cascade = ALL)
     private Competicao competicao;
 }
