@@ -11,4 +11,5 @@ import javax.persistence.Entity;
 @EqualsAndHashCode(callSuper = false)
 public class Competidor extends AbstractPersistable<Long> {
 
+    private String nome;
 }

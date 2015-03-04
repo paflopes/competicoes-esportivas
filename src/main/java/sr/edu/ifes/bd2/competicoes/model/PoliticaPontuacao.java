@@ -11,4 +11,8 @@ import javax.persistence.Entity;
 @EqualsAndHashCode(callSuper = false)
 public class PoliticaPontuacao extends AbstractPersistable<Long> {
 
+    private Integer pontosPorVitoria;
+    private Integer pontosPorEmpate;
+    private Integer pontosPorDerrota;
+    private boolean empatesPermitidos;
 }

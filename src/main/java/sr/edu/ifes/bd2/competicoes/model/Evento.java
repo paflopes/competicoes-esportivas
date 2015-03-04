@@ -11,4 +11,8 @@ import javax.persistence.Entity;
 @EqualsAndHashCode(callSuper = false)
 public class Evento extends AbstractPersistable<Long> {
 
+    private Competidor competidor1;
+    private Competidor competidor2;
+    private Competicao competicao;
+    private Competidor vencedor;
 }
