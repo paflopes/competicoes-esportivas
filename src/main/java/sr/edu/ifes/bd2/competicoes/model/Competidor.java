@@ -9,6 +9,8 @@ import javax.persistence.Entity;
 import javax.persistence.OneToMany;
 import java.util.List;
 
+import static javax.persistence.CascadeType.ALL;
+
 @Entity
 @Data
 @EqualsAndHashCode(callSuper = false)
@@ -17,8 +19,8 @@ public class Competidor extends AbstractPersistable<Long> {
     @Column
     private String nome;
 
-    @OneToMany(mappedBy = "competidor")
+    @OneToMany(mappedBy = "competidor", cascade = ALL)
     private List<Participacao> participacoes;
-    @OneToMany(mappedBy = "competidor")
+    @OneToMany(mappedBy = "competidor", cascade = ALL)
     private List<Evento> eventos;
 }

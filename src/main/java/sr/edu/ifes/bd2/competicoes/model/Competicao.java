@@ -6,9 +6,9 @@ import org.springframework.data.jpa.domain.AbstractPersistable;
 
 import javax.persistence.*;
 import java.util.Calendar;
-import java.util.Date;
 import java.util.List;
 
+import static javax.persistence.CascadeType.ALL;
 import static javax.persistence.TemporalType.DATE;
 
 @Entity
@@ -22,12 +22,12 @@ public class Competicao extends AbstractPersistable<Long> {
     private Calendar dataInicio;
     @Temporal(DATE)
     private Calendar dataFim;
-    @OneToOne(orphanRemoval = true)
+    @OneToOne(orphanRemoval = true, cascade = ALL)
     private PoliticaPontuacao politicaPontuacao;
 
 //    Para permitir consultas por esse lado do relacionamento.
-    @OneToMany(mappedBy = "competicao")
+    @OneToMany(mappedBy = "competicao", cascade = ALL)
     private List<Participacao> participacoes;
-    @OneToMany(mappedBy = "competicao")
+    @OneToMany(mappedBy = "competicao", cascade = ALL)
     private List<Evento> eventos;
 }
