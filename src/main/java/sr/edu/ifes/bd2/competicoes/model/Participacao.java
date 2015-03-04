@@ -4,6 +4,7 @@ import lombok.Data;
 import lombok.EqualsAndHashCode;
 import org.springframework.data.jpa.domain.AbstractPersistable;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
@@ -13,8 +14,12 @@ import javax.persistence.OneToMany;
 @EqualsAndHashCode(callSuper = false)
 public class Participacao extends AbstractPersistable<Long> {
 
+    @Column
     private Long colocacao;
-    private String premio;
+    @Column
+    private Long premio;
+    @ManyToOne
     private Competidor competidor;
+    @ManyToOne
     private Competicao competicao;
 }
