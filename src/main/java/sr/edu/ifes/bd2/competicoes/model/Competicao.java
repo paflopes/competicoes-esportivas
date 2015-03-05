@@ -3,9 +3,11 @@ package sr.edu.ifes.bd2.competicoes.model;
 import lombok.Builder;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
+import org.hibernate.validator.constraints.NotEmpty;
 import org.springframework.data.jpa.domain.AbstractPersistable;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotNull;
 import java.util.Calendar;
 import java.util.List;
 
@@ -18,13 +20,13 @@ import static javax.persistence.TemporalType.DATE;
 @EqualsAndHashCode(callSuper = false)
 public class Competicao extends AbstractPersistable<Long> {
 
-    @Column
+    @Column @NotEmpty
     private String nome;
-    @Temporal(DATE)
+    @Temporal(DATE) @NotEmpty
     private Calendar dataInicio;
-    @Temporal(DATE)
+    @Temporal(DATE) @NotEmpty
     private Calendar dataFim;
-    @OneToOne(orphanRemoval = true, cascade = ALL)
+    @OneToOne(orphanRemoval = true, cascade = ALL) @NotNull
     private PoliticaPontuacao politicaPontuacao;
 
     //    Para permitir consultas por esse lado do relacionamento.

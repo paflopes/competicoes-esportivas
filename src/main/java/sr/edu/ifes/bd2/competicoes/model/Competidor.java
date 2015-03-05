@@ -1,6 +1,7 @@
 package sr.edu.ifes.bd2.competicoes.model;
 
 import lombok.*;
+import org.hibernate.validator.constraints.NotEmpty;
 import org.springframework.data.jpa.domain.AbstractPersistable;
 
 import javax.persistence.Column;
@@ -18,7 +19,7 @@ import static javax.persistence.CascadeType.ALL;
 @AllArgsConstructor
 public class Competidor extends AbstractPersistable<Long> {
 
-    @Column
+    @Column @NotEmpty
     private String nome;
 
     @OneToMany(mappedBy = "competidor", cascade = ALL)

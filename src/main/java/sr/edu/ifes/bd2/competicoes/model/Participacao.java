@@ -8,6 +8,7 @@ import org.springframework.data.jpa.domain.AbstractPersistable;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.ManyToOne;
+import javax.validation.constraints.NotNull;
 
 import static javax.persistence.CascadeType.ALL;
 
@@ -21,8 +22,8 @@ public class Participacao extends AbstractPersistable<Long> {
     private Long colocacao;
     @Column
     private Long premio;
-    @ManyToOne(cascade = ALL)
+    @ManyToOne(cascade = ALL) @NotNull
     private Competidor competidor;
-    @ManyToOne(cascade = ALL)
+    @ManyToOne(cascade = ALL) @NotNull
     private Competicao competicao;
 }

@@ -7,6 +7,7 @@ import org.springframework.data.jpa.domain.AbstractPersistable;
 
 import javax.persistence.Entity;
 import javax.persistence.ManyToOne;
+import javax.validation.constraints.NotNull;
 
 import static javax.persistence.CascadeType.*;
 
@@ -16,11 +17,11 @@ import static javax.persistence.CascadeType.*;
 @EqualsAndHashCode(callSuper = false)
 public class Evento extends AbstractPersistable<Long> {
 
-    @ManyToOne(cascade = {MERGE, DETACH, PERSIST, REFRESH})
+    @NotNull @ManyToOne(cascade = {MERGE, DETACH, PERSIST, REFRESH})
     private Competidor competidor1;
-    @ManyToOne(cascade = {MERGE, DETACH, PERSIST, REFRESH})
+    @NotNull @ManyToOne(cascade = {MERGE, DETACH, PERSIST, REFRESH})
     private Competidor competidor2;
-    @ManyToOne(cascade = {MERGE, DETACH, PERSIST, REFRESH})
+    @NotNull @ManyToOne(cascade = {MERGE, DETACH, PERSIST, REFRESH})
     private Competicao competicao;
     @ManyToOne(cascade = {MERGE, DETACH, PERSIST, REFRESH})
     private Competidor vencedor;
