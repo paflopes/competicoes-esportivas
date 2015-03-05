@@ -75,6 +75,8 @@ crashlytics-build.properties
 # sftp configuration file
 sftp-config.json
 
+# persistence.xml
+/META-INF
 
 ### Eclipse template
 *.pydevproject

@@ -1,0 +1,198 @@
+[
+  {
+    "_class": "sr.edu.ifes.bd2.competicoes.model.Competidor",
+    "nome": "América-MG",
+    "participacoes": null,
+    "eventosCompetidor1": null,
+    "eventosCompetidor2": null
+  },
+  {
+    "_class": "sr.edu.ifes.bd2.competicoes.model.Competidor",
+    "nome": "Atlético-GO",
+    "participacoes": null,
+    "eventosCompetidor1": null,
+    "eventosCompetidor2": null
+  },
+  {
+    "_class": "sr.edu.ifes.bd2.competicoes.model.Competidor",
+    "nome": "Atlético-MG",
+    "participacoes": null,
+    "eventosCompetidor1": null,
+    "eventosCompetidor2": null
+  },
+  {
+    "_class": "sr.edu.ifes.bd2.competicoes.model.Competidor",
+    "nome": "Atlético-PR",
+    "participacoes": null,
+    "eventosCompetidor1": null,
+    "eventosCompetidor2": null
+  },
+  {
+    "_class": "sr.edu.ifes.bd2.competicoes.model.Competidor",
+    "nome": "Avaí",
+    "participacoes": null,
+    "eventosCompetidor1": null,
+    "eventosCompetidor2": null
+  },
+  {
+    "_class": "sr.edu.ifes.bd2.competicoes.model.Competidor",
+    "nome": "Bahia",
+    "participacoes": null,
+    "eventosCompetidor1": null,
+    "eventosCompetidor2": null
+  },
+  {
+    "_class": "sr.edu.ifes.bd2.competicoes.model.Competidor",
+    "nome": "Botafogo",
+    "participacoes": null,
+    "eventosCompetidor1": null,
+    "eventosCompetidor2": null
+  },
+  {
+    "_class": "sr.edu.ifes.bd2.competicoes.model.Competidor",
+    "nome": "Ceará",
+    "participacoes": null,
+    "eventosCompetidor1": null,
+    "eventosCompetidor2": null
+  },
+  {
+    "_class": "sr.edu.ifes.bd2.competicoes.model.Competidor",
+    "nome": "Chapecoense",
+    "participacoes": null,
+    "eventosCompetidor1": null,
+    "eventosCompetidor2": null
+  },
+  {
+    "_class": "sr.edu.ifes.bd2.competicoes.model.Competidor",
+    "nome": "Corinthians",
+    "participacoes": null,
+    "eventosCompetidor1": null,
+    "eventosCompetidor2": null
+  },
+  {
+    "_class": "sr.edu.ifes.bd2.competicoes.model.Competidor",
+    "nome": "Coritiba",
+    "participacoes": null,
+    "eventosCompetidor1": null,
+    "eventosCompetidor2": null
+  },
+  {
+    "_class": "sr.edu.ifes.bd2.competicoes.model.Competidor",
+    "nome": "Criciúma",
+    "participacoes": null,
+    "eventosCompetidor1": null,
+    "eventosCompetidor2": null
+  },
+  {
+    "_class": "sr.edu.ifes.bd2.competicoes.model.Competidor",
+    "nome": "Cruzeiro",
+    "participacoes": null,
+    "eventosCompetidor1": null,
+    "eventosCompetidor2": null
+  },
+  {
+    "_class": "sr.edu.ifes.bd2.competicoes.model.Competidor",
+    "nome": "Figueirense",
+    "participacoes": null,
+    "eventosCompetidor1": null,
+    "eventosCompetidor2": null
+  },
+  {
+    "_class": "sr.edu.ifes.bd2.competicoes.model.Competidor",
+    "nome": "Flamengo",
+    "participacoes": null,
+    "eventosCompetidor1": null,
+    "eventosCompetidor2": null
+  },
+  {
+    "_class": "sr.edu.ifes.bd2.competicoes.model.Competidor",
+    "nome": "Fluminense",
+    "participacoes": null,
+    "eventosCompetidor1": null,
+    "eventosCompetidor2": null
+  },
+  {
+    "_class": "sr.edu.ifes.bd2.competicoes.model.Competidor",
+    "nome": "Goiás",
+    "participacoes": null,
+    "eventosCompetidor1": null,
+    "eventosCompetidor2": null
+  },
+  {
+    "_class": "sr.edu.ifes.bd2.competicoes.model.Competidor",
+    "nome": "Grêmio",
+    "participacoes": null,
+    "eventosCompetidor1": null,
+    "eventosCompetidor2": null
+  },
+  {
+    "_class": "sr.edu.ifes.bd2.competicoes.model.Competidor",
+    "nome": "Internacional",
+    "participacoes": null,
+    "eventosCompetidor1": null,
+    "eventosCompetidor2": null
+  },
+  {
+    "_class": "sr.edu.ifes.bd2.competicoes.model.Competidor",
+    "nome": "Palmeiras",
+    "participacoes": null,
+    "eventosCompetidor1": null,
+    "eventosCompetidor2": null
+  },
+  {
+    "_class": "sr.edu.ifes.bd2.competicoes.model.Competidor",
+    "nome": "Santos",
+    "participacoes": null,
+    "eventosCompetidor1": null,
+    "eventosCompetidor2": null
+  },
+  {
+    "_class": "sr.edu.ifes.bd2.competicoes.model.Competidor",
+    "nome": "São Paulo",
+    "participacoes": null,
+    "eventosCompetidor1": null,
+    "eventosCompetidor2": null
+  },
+  {
+    "_class": "sr.edu.ifes.bd2.competicoes.model.Competidor",
+    "nome": "Sport",
+    "participacoes": null,
+    "eventosCompetidor1": null,
+    "eventosCompetidor2": null
+  },
+  {
+    "_class": "sr.edu.ifes.bd2.competicoes.model.Competidor",
+    "nome": "Vitória",
+    "participacoes": null,
+    "eventosCompetidor1": null,
+    "eventosCompetidor2": null
+  },
+  {
+    "_class": "sr.edu.ifes.bd2.competicoes.model.Competidor",
+    "nome": "Náutico",
+    "participacoes": null,
+    "eventosCompetidor1": null,
+    "eventosCompetidor2": null
+  },
+  {
+    "_class": "sr.edu.ifes.bd2.competicoes.model.Competidor",
+    "nome": "Ponte Preta",
+    "participacoes": null,
+    "eventosCompetidor1": null,
+    "eventosCompetidor2": null
+  },
+  {
+    "_class": "sr.edu.ifes.bd2.competicoes.model.Competidor",
+    "nome": "Portuguesa",
+    "participacoes": null,
+    "eventosCompetidor1": null,
+    "eventosCompetidor2": null
+  },
+  {
+    "_class": "sr.edu.ifes.bd2.competicoes.model.Competidor",
+    "nome": "Vasco da Gama",
+    "participacoes": null,
+    "eventosCompetidor1": null,
+    "eventosCompetidor2": null
+  }
+]
