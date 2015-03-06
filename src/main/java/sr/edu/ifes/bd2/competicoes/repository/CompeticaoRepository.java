@@ -9,5 +9,4 @@ import java.util.List;
 @Repository
 public interface CompeticaoRepository extends JpaRepository<Competicao, Long> {
 
-    public List<Competicao> findByParticipacoesCompetidorId(Long idCompetidor);
 }
