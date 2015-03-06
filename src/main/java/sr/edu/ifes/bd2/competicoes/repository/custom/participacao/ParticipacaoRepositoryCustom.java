@@ -6,5 +6,5 @@ import java.util.List;
 
 public interface ParticipacaoRepositoryCustom {
 
-    public List<Participacao> findByCompetidorIdCustom(Long id);
+    public List<Participacao> findByCompetidorIdDadosDerivadosPreenchidos(Long id);
 }
