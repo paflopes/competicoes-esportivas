@@ -26,4 +26,6 @@ public class Participacao extends AbstractPersistable<Long> {
     private Competidor competidor;
     @ManyToOne(cascade = ALL) @NotNull
     private Competicao competicao;
+
+    private Integer pontuacao;
 }
