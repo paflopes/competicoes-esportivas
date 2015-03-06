@@ -1,4 +1,4 @@
-package sr.edu.ifes.bd2.competicoes.persistence.repository;
+package sr.edu.ifes.bd2.competicoes.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
