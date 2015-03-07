@@ -7,7 +7,7 @@ import sr.edu.ifes.bd2.competicoes.model.Competicao;
 import sr.edu.ifes.bd2.competicoes.model.Competidor;
 import sr.edu.ifes.bd2.competicoes.model.Participacao;
 import sr.edu.ifes.bd2.competicoes.model.PoliticaPontuacao;
-import sr.edu.ifes.bd2.competicoes.repository.CompeticaoRepository;
+import sr.edu.ifes.bd2.competicoes.repository.ParticipacaoRepository;
 
 import java.util.ArrayList;
 import java.util.Calendar;
@@ -20,9 +20,9 @@ public class PreencherBancoDeDados {
 
     public static void main(String[] args) {
         ApplicationContext context = new ClassPathXmlApplicationContext("classpath:spring-context.xml");
-        final CompeticaoRepository competicaoRepository = context.getBean(CompeticaoRepository.class);
+        final ParticipacaoRepository participacaoRepository = context.getBean(ParticipacaoRepository.class);
 
-        competicaoRepository.save(competicoes());
+        participacaoRepository.findByCompetidorIdDadosDerivadosPreenchidos(1L);
     }
 
     public static List<Competicao> competicoes() {
