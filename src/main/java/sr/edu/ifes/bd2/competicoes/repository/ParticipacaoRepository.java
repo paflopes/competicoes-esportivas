@@ -11,4 +11,6 @@ import java.util.List;
 public interface ParticipacaoRepository extends JpaRepository<Participacao, Long>, ParticipacaoRepositoryCustom {
 
     public List<Participacao> findByCompetidorId(Long id);
+
+    public List<Participacao> findByCompeticaoId(Long id);
 }

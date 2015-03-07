@@ -28,6 +28,15 @@ public class ParticipacaoRepositoryImpl implements ParticipacaoRepositoryCustom 
         return participacoes;
     }
 
+    @Override
+    public List<Participacao> findByCompeticaoIdDadosDerivadosPreenchidos(Long id) {
+        final List<Participacao> participacoes = participacaoRepository.findByCompeticaoId(id);
+
+        preencherDadosDerivados(participacoes);
+
+        return participacoes;
+    }
+
     private void preencherDadosDerivados(List<Participacao> participacoes) {
         for (Participacao participacao : participacoes) {
             final List<Evento> eventos = eventoRepository.findByCompetidorIdAndCompeticaoId(participacao.getCompetidor().getId(), participacao.getCompeticao().getId());
@@ -44,6 +53,9 @@ public class ParticipacaoRepositoryImpl implements ParticipacaoRepositoryCustom 
                 else if (evento.getVencedor() == null && evento.getCompeticao().getPoliticaPontuacao().isEmpatesPermitidos())
                     empates++;
             }
+
+            if (!participacao.getCompeticao().getPoliticaPontuacao().isEmpatesPermitidos())
+                empates = 0;
 
             pontuacao = vitorias * participacao.getCompeticao().getPoliticaPontuacao().getPontosPorVitoria();
             pontuacao += empates * participacao.getCompeticao().getPoliticaPontuacao().getPontosPorEmpate();
