@@ -4,7 +4,7 @@ DECLARE
   colocacao_loop   BIGINT;
   politica         politicapontuacao%ROWTYPE;
   participacao_var participacao%ROWTYPE;
-    participacoes CURSOR FOR SELECT participacao.*
+  participacoes CURSOR FOR SELECT participacao.*
                              FROM participacao
                                JOIN competicao ON competicao.id = participacao.competicao_id
                              WHERE competicao.id = idCompeticao;
