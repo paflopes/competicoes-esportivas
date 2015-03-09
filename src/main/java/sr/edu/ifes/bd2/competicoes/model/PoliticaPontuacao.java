@@ -1,8 +1,6 @@
 package sr.edu.ifes.bd2.competicoes.model;
 
-import lombok.Builder;
-import lombok.Data;
-import lombok.EqualsAndHashCode;
+import lombok.*;
 import org.springframework.data.jpa.domain.AbstractPersistable;
 
 import javax.persistence.Column;
@@ -13,6 +11,7 @@ import javax.persistence.OneToOne;
 @Data
 @Builder
 @EqualsAndHashCode(callSuper = false)
+@NoArgsConstructor @AllArgsConstructor
 public class PoliticaPontuacao extends AbstractPersistable<Long> {
 
     @Column

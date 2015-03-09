@@ -1,8 +1,6 @@
 package sr.edu.ifes.bd2.competicoes.model;
 
-import lombok.Builder;
-import lombok.Data;
-import lombok.EqualsAndHashCode;
+import lombok.*;
 import org.hibernate.validator.constraints.NotEmpty;
 import org.springframework.data.jpa.domain.AbstractPersistable;
 
@@ -18,6 +16,7 @@ import static javax.persistence.TemporalType.DATE;
 @Data
 @Builder
 @EqualsAndHashCode(callSuper = false)
+@AllArgsConstructor @NoArgsConstructor
 public class Competicao extends AbstractPersistable<Long> {
 
     @Column @NotEmpty

@@ -1,8 +1,6 @@
 package sr.edu.ifes.bd2.competicoes.model;
 
-import lombok.Builder;
-import lombok.Data;
-import lombok.EqualsAndHashCode;
+import lombok.*;
 import org.springframework.data.jpa.domain.AbstractPersistable;
 
 import javax.persistence.Column;
@@ -16,6 +14,7 @@ import static javax.persistence.CascadeType.ALL;
 @Data
 @Builder
 @EqualsAndHashCode(callSuper = false)
+@AllArgsConstructor @NoArgsConstructor
 public class Participacao extends AbstractPersistable<Long> {
 
     @Column

@@ -15,8 +15,7 @@ import static javax.persistence.CascadeType.ALL;
 @Data
 @Builder
 @EqualsAndHashCode(callSuper = false)
-@NoArgsConstructor
-@AllArgsConstructor
+@AllArgsConstructor @NoArgsConstructor
 public class Competidor extends AbstractPersistable<Long> {
 
     @Column @NotEmpty

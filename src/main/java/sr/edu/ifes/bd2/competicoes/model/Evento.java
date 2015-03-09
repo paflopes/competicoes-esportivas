@@ -1,8 +1,6 @@
 package sr.edu.ifes.bd2.competicoes.model;
 
-import lombok.Builder;
-import lombok.Data;
-import lombok.EqualsAndHashCode;
+import lombok.*;
 import org.springframework.data.jpa.domain.AbstractPersistable;
 
 import javax.persistence.Entity;
@@ -15,6 +13,7 @@ import static javax.persistence.CascadeType.*;
 @Data
 @Builder
 @EqualsAndHashCode(callSuper = false)
+@AllArgsConstructor @NoArgsConstructor
 public class Evento extends AbstractPersistable<Long> {
 
     @NotNull @ManyToOne(cascade = {MERGE, DETACH, PERSIST, REFRESH})
