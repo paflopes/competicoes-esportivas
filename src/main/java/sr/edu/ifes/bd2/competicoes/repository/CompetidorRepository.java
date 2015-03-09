@@ -10,6 +10,4 @@ import java.util.List;
 public interface CompetidorRepository extends JpaRepository<Competidor, Long> {
 
     public List<Competidor> findTop5ByOrderByParticipacoesColocacaoAsc();
-
-    public List<Competidor> findByParticipacoesCompeticaoId(Long idCompeticao);
 }
